@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weekend trip planner.">
+  <title>Discover a trip | Trippy</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery-3.7.1.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="shell header-top">
+      <a class="brand" href="index.html" aria-label="Trippy home"><span class="brand-mark" aria-hidden="true">T</span><span>TRIPPY</span></a>
+      <form class="search" action="results.html" method="get" role="search"><label class="skip-link" for="site-search">Search activities</label><div class="search-controls"><input id="site-search" name="q" type="search" placeholder="Try hike" required><button type="submit">Search</button></div></form>
+      <div class="account"><a class="button secondary" href="dashboard.html">Log in</a><a class="button" href="dashboard.html">Join trip</a></div>
+    </div>
+    <nav class="shell site-nav" aria-label="Primary navigation"><a href="index.html" aria-current="page">Home</a><a href="dashboard.html">My trip</a><a href="list.html">Activities</a></nav>
+  </header>
+  <main id="main" class="shell">
+<section class="trip-hero">
+ <div><h1>Plan a weekend trip</h1><div class="button-row"><a class="button" href="dashboard.html">Start a trip</a><a class="button secondary" href="list.html">View Asheville activities</a></div>
+ </div>
+ <div class="hero-art"><svg viewBox="0 0 640 360" role="img" aria-label="Blue Ridge mountains at sunrise. Layered green mountain ridges beneath a pale sunrise." xmlns="http://www.w3.org/2000/svg"><rect width="640" height="360" fill="#e7eee6"/><circle cx="478" cy="88" r="42" fill="#e4bd78"/><path d="M0 242 152 92l117 148 108-116 263 180v56H0Z" fill="#91a893"/><path d="m0 282 173-117 118 115 133-142 216 157v65H0Z" fill="#668672"/><path d="m0 320 164-95 120 82 153-98 203 114v37H0Z" fill="#315b4b"/><path d="M0 326q120-22 240 0t240 0 160 0v34H0Z" fill="#244638"/></svg></div>
+</section>
+<section class="panel" aria-labelledby="start-trip-title"><div class="section-head"><div><h2 id="start-trip-title">Start a new trip</h2></div></div><form action="dashboard.html" method="get" class="form-grid"><div class="form-field"><label for="destination">Where are you going?</label><input id="destination" name="destination" placeholder="e.g. Asheville, NC" required></div><div class="form-field"><label for="trip-dates">When?</label><input id="trip-dates" name="dates" placeholder="Oct 11–13" required></div><div class="form-field"><label for="trip-name">Trip name</label><input id="trip-name" name="trip" placeholder="Asheville weekend"></div><div class="form-field align-end"><button type="submit">Create trip</button></div></form></section>
+<section class="section"><div class="section-head"><div><h2>Sample trips</h2></div><a href="list.html">See activity ideas →</a></div><div class="grid grid-3">
+ <article class="card trip-card"><div class="trip-card-art"><svg viewBox="0 0 640 260" role="img" aria-label="Coastal weekend landscape. A calm blue inlet, sandy shore, and distant green hills." xmlns="http://www.w3.org/2000/svg"><rect width="640" height="260" fill="#e9efe8"/><circle cx="488" cy="58" r="30" fill="#e5c583"/><path d="M0 134q100-65 205 0t210-2q110-64 225-5v133H0Z" fill="#a4b9a7"/><path d="M0 168q140-42 270 4t230-8q75-32 140-1v97H0Z" fill="#6d9a8e"/><path d="M0 221q156-22 287 0t353-9v48H0Z" fill="#d5c69d"/></svg></div><div class="card-pad"><h3>Mountain reset</h3><p>Asheville, NC · Oct 11–13</p><p class="small muted">4 friends · 6 ideas</p><a href="list.html">View activities</a></div></article>
+ <article class="card trip-card"><div class="trip-card-art"><svg viewBox="0 0 640 360" role="img" aria-label="Blue Ridge mountains at sunrise. Layered green mountain ridges beneath a pale sunrise." xmlns="http://www.w3.org/2000/svg"><rect width="640" height="360" fill="#e7eee6"/><circle cx="478" cy="88" r="42" fill="#e4bd78"/><path d="M0 242 152 92l117 148 108-116 263 180v56H0Z" fill="#91a893"/><path d="m0 282 173-117 118 115 133-142 216 157v65H0Z" fill="#668672"/><path d="m0 320 164-95 120 82 153-98 203 114v37H0Z" fill="#315b4b"/><path d="M0 326q120-22 240 0t240 0 160 0v34H0Z" fill="#244638"/></svg></div><div class="card-pad"><h3>Food + fall colors</h3><p>Hudson Valley, NY · Nov 02–03</p><p class="small muted">5 friends · 4 ideas</p><a href="list.html">View activities</a></div></article>
+ <article class="card trip-card"><div class="trip-card-art"><svg viewBox="0 0 640 260" role="img" aria-label="Coastal weekend landscape. A calm blue inlet, sandy shore, and distant green hills." xmlns="http://www.w3.org/2000/svg"><rect width="640" height="260" fill="#e9efe8"/><circle cx="488" cy="58" r="30" fill="#e5c583"/><path d="M0 134q100-65 205 0t210-2q110-64 225-5v133H0Z" fill="#a4b9a7"/><path d="M0 168q140-42 270 4t230-8q75-32 140-1v97H0Z" fill="#6d9a8e"/><path d="M0 221q156-22 287 0t353-9v48H0Z" fill="#d5c69d"/></svg></div><div class="card-pad"><h3>Beach house</h3><p>Outer Banks, NC · Dec 06–08</p><p class="small muted">6 friends · 9 ideas</p><a href="list.html">View activities</a></div></article>
+</div></section></main>
+  <footer></footer>
+</body>
+</html>

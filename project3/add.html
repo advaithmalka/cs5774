@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weekend trip planner.">
+  <title>Activity proposal | Trippy</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery-3.7.1.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="shell header-top">
+      <a class="brand" href="index.html" aria-label="Trippy home"><span class="brand-mark" aria-hidden="true">T</span><span>TRIPPY</span></a>
+      <form class="search" action="results.html" method="get" role="search"><label class="skip-link" for="site-search">Search activities</label><div class="search-controls"><input id="site-search" name="q" type="search" placeholder="Try hike" required><button type="submit">Search</button></div></form>
+      <div class="account"><a class="button secondary" href="dashboard.html">Log in</a><a class="button" href="dashboard.html">Join trip</a></div>
+    </div>
+    <nav class="shell site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="dashboard.html">My trip</a><a href="list.html" aria-current="page">Activities</a></nav>
+  </header>
+  <main id="main" class="shell"><div class="breadcrumb"><a href="dashboard.html">Asheville weekend</a><span aria-hidden="true">/</span><a href="list.html">Activities</a><span aria-hidden="true">/</span><span>Activity proposal</span></div><div class="page-title"><div><p class="eyebrow">Asheville weekend · Activities</p><h1>Activity proposal</h1></div></div>
+<form action="detail.html" method="get" class="card card-pad"><h2>Activity details</h2><div class="form-grid"><div class="form-field wide"><label for="title">Title</label><input id="title" name="title" placeholder="e.g. Blue Ridge hike" value="Blue Ridge hike" required></div><div class="form-field"><label for="category">Category</label><select id="category" name="category"><option>Outdoors</option><option>Food + drink</option><option>Explore</option><option>Events</option></select></div><div class="form-field"><label for="cost">Cost per person</label><input id="cost" name="cost" type="number" min="0" step="0.01" value="18"></div><div class="form-field"><label for="date">Date</label><input id="date" name="date" type="date" value="2026-10-12"></div><div class="form-field"><label for="start">Start time</label><input id="start" name="start" type="time" value="10:00"></div><div class="form-field"><label for="end">End time</label><input id="end" name="end" type="time" value="13:00"></div><div class="form-field"><label for="location">Location</label><input id="location" name="location" value="Blue Ridge Parkway"></div><div class="form-field wide"><label for="description">Description</label><textarea id="description" name="description">A moderate trail with a big payoff. Pack water and a snack; we can carpool from the house.</textarea></div><div class="form-field wide"><label for="image">Optional image</label><input id="image" name="image" type="file" accept="image/*"></div></div><div class="button-row"><button type="submit">Save activity</button><a class="button secondary" href="detail.html">Preview</a><a class="button quiet" href="list.html">Cancel</a></div></form>
+</main>
+  <footer></footer>
+</body>
+</html>

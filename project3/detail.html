@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weekend trip planner.">
+  <title>Blue Ridge hike | Trippy</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery-3.7.1.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="shell header-top">
+      <a class="brand" href="index.html" aria-label="Trippy home"><span class="brand-mark" aria-hidden="true">T</span><span>TRIPPY</span></a>
+      <form class="search" action="results.html" method="get" role="search"><label class="skip-link" for="site-search">Search activities</label><div class="search-controls"><input id="site-search" name="q" type="search" placeholder="Try hike" required><button type="submit">Search</button></div></form>
+      <div class="account"><a class="button secondary" href="dashboard.html">Log in</a><a class="button" href="dashboard.html">Join trip</a></div>
+    </div>
+    <nav class="shell site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="dashboard.html">My trip</a><a href="list.html" aria-current="page">Activities</a></nav>
+  </header>
+  <main id="main" class="shell"><div class="breadcrumb"><a href="dashboard.html">Asheville weekend</a><span aria-hidden="true">/</span><a href="list.html">Activities</a><span aria-hidden="true">/</span><span>Blue Ridge hike</span></div>
+<section class="detail-top"><div class="detail-art"><svg viewBox="0 0 640 360" role="img" aria-label="Blue Ridge mountains at sunrise. Layered green mountain ridges beneath a pale sunrise." xmlns="http://www.w3.org/2000/svg"><rect width="640" height="360" fill="#e7eee6"/><circle cx="478" cy="88" r="42" fill="#e4bd78"/><path d="M0 242 152 92l117 148 108-116 263 180v56H0Z" fill="#91a893"/><path d="m0 282 173-117 118 115 133-142 216 157v65H0Z" fill="#668672"/><path d="m0 320 164-95 120 82 153-98 203 114v37H0Z" fill="#315b4b"/><path d="M0 326q120-22 240 0t240 0 160 0v34H0Z" fill="#244638"/></svg></div><div><p class="eyebrow">Outdoors · Proposed by Maya</p><h1>Blue Ridge hike</h1><p class="lede">A moderate trail with a big payoff. Pack water and a snack; we can carpool from the house.</p><p><strong>Sat, Oct 12 · 10:00 AM</strong><br><span class="muted">Blue Ridge Parkway</span></p><h2>$18 <span class="small muted">/ person</span></h2><p class="small muted">Includes shuttle + park fee · Suggested end time 1:00 PM</p><div class="vote-group" aria-label="Your RSVP"><button type="button" class="secondary vote-option" data-vote="in" aria-pressed="false">I’m in</button><button type="button" class="secondary vote-option" data-vote="maybe" aria-pressed="false">Maybe</button><button type="button" class="secondary vote-option" data-vote="out" aria-pressed="false">I’m out</button></div><p class="small muted vote-counts">4 in · 1 maybe · 0 out</p><div class="button-row"><a class="button secondary" href="add.html">Edit proposal</a><a class="button danger" href="list.html">Remove proposal</a></div></div></section>
+<section class="split-section"><div><h2>Who’s in?</h2><div class="avatar-row"><div class="person"><span class="avatar">M</span>Maya<small class="muted">In</small></div><div class="person"><span class="avatar">J</span>Jordan<small class="muted">In</small></div><div class="person"><span class="avatar">P</span>Priya<small class="muted">Maybe</small></div><div class="person"><span class="avatar">N</span>Noah<small class="muted">In</small></div><div class="person"><span class="avatar">S</span>Sam<small class="muted">In</small></div></div></div><div><h2>Comments</h2><article class="comment"><div class="comment-head"><strong>Jordan</strong><time datetime="10:42">10:42 AM</time></div><p>Can we do this before brunch?</p></article><article class="comment"><div class="comment-head"><strong>Maya</strong><time datetime="11:08">11:08 AM</time></div><p>Yes — I’ll add a carpool option.</p></article><article class="comment"><div class="comment-head"><strong>Sam</strong><time datetime="11:21">11:21 AM</time></div><p>I’m in if we leave by 9:30.</p></article><form class="comment-form" action="detail.html" method="get"><div><label class="skip-link" for="comment">Add a comment for the group</label><input id="comment" name="comment" placeholder="Add a comment for the group…"></div><button type="submit">Post comment</button></form></div></section>
+<div class="section button-row"><a class="button secondary" href="list.html">← Back to activities</a></div></main>
+  <footer></footer>
+</body>
+</html>

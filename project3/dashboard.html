@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weekend trip planner.">
+  <title>Trip dashboard | Trippy</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="jquery-3.7.1.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="shell header-top">
+      <a class="brand" href="index.html" aria-label="Trippy home"><span class="brand-mark" aria-hidden="true">T</span><span>TRIPPY</span></a>
+      <form class="search" action="results.html" method="get" role="search"><label class="skip-link" for="site-search">Search activities</label><div class="search-controls"><input id="site-search" name="q" type="search" placeholder="Try hike" required><button type="submit">Search</button></div></form>
+      <div class="account"><a class="button secondary" href="dashboard.html">Log in</a><a class="button" href="dashboard.html">Join trip</a></div>
+    </div>
+    <nav class="shell site-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="dashboard.html" aria-current="page">My trip</a><a href="list.html">Activities</a></nav>
+  </header>
+  <main id="main" class="shell"><p class="eyebrow">Saturday, October 5</p><h1>My trip</h1><div class="dashboard-top"><section class="panel"><div class="section-head"><div><h2>Asheville weekend</h2><p class="muted">Oct 11–13 · 5 friends · 6 activity ideas</p></div><a class="button" href="list.html">Activities</a></div><label for="progress">Planning progress</label><div class="progress-line"><progress id="progress" value="64" max="100">64%</progress><strong>64%</strong></div></section><section class="card card-pad"><h2>Your friends</h2><div class="avatar-row"><span class="avatar">M</span><span class="avatar">J</span><span class="avatar">P</span><span class="avatar">N</span><span class="avatar">S</span></div><p class="small muted">5 of 5 have joined</p></section></div>
+<div class="dashboard-columns"><section><div class="section-head"><div><h2>Needs a group decision</h2></div></div><div class="decision-list"><article class="decision"><div><strong><a href="detail.html">Blue Ridge hike</a></strong><div class="small muted">4 in · 1 maybe · 0 out</div></div><a class="button secondary" href="detail.html">Vote now</a></article><article class="decision"><div><strong><a href="detail.html">Dinner at Curate</a></strong><div class="small muted">3 in · 2 maybe</div></div><a class="button secondary" href="detail.html">Add your vote</a></article><article class="decision"><div><strong><a href="list.html">Cabin check-in time</a></strong><div class="small muted">2 options · needs a choice</div></div><a class="button secondary" href="detail.html">Review</a></article></div><div class="section button-row"><a class="button" href="add.html">＋ Add an activity</a><a class="button secondary" href="list.html">Browse proposals</a></div></section><section><h2>Accepted itinerary</h2><div class="itinerary"><article class="itinerary-item"><span><strong>Sat 10:00</strong><br><a href="detail.html">Blue Ridge hike</a></span><span class="small muted">$18 / person</span></article><article class="itinerary-item"><span><strong>Sat 1:30</strong><br>Lunch TBD</span><span class="small muted">Not decided</span></article><article class="itinerary-item"><span><strong>Sat 7:30</strong><br>Dinner at Curate</span><span class="small muted">$55 / person</span></article></div></section></div></main>
+  <footer></footer>
+</body>
+</html>
